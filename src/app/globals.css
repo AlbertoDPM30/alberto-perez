@@ -3,10 +3,74 @@
 :root {
   --background: #e6e6e6;
   --foreground: #1a1a1a;
+  --title-color: #ad7adf;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   overflow-x: hidden;
+}
+
+.title-color {
+  color: var(--title-color);
+}
+
+/* ANIMATIONS */
+@keyframes topFade {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-top-fade {
+  animation: topFade 0.7s ease-out;
+}
+
+@keyframes leftFade {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-left-fade {
+  animation: leftFade 0.9s ease-out;
+}
+
+@keyframes rightFade {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-right-fade {
+  animation: rightFade 0.5s ease-out;
+}
+
+@keyframes centerFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-center-fade {
+  animation: centerFade 0.9s ease-out;
 }
