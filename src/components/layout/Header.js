@@ -8,7 +8,7 @@ export default function Header({ tags = {} }) {
             {Object.values(tags).map(({ item, url }) => (
               <li key={item}>
                 <a
-                  className="text-indigo-500 text-shadow-md text-shadow-[#26262668] transition-all ease-in-out duration-500 hover:text-[#ad7adf]"
+                  className="text-neutral-100 text-shadow-md text-shadow-neutral-700/30 transition-all ease-in-out duration-500 hover:text-indigo-300"
                   href={`${url}`}
                 >
                   {item}
