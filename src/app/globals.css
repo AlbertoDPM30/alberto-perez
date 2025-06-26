@@ -28,10 +28,6 @@ body {
   }
 }
 
-.animate-top-fade {
-  animation: topFade 0.7s ease-out;
-}
-
 @keyframes leftFade {
   from {
     transform: translateX(-100%);
@@ -41,10 +37,6 @@ body {
     transform: translateX(0);
     opacity: 1;
   }
-}
-
-.animate-left-fade {
-  animation: leftFade 0.9s ease-out;
 }
 
 @keyframes rightFade {
@@ -58,10 +50,6 @@ body {
   }
 }
 
-.animate-right-fade {
-  animation: rightFade 0.5s ease-out;
-}
-
 @keyframes centerFade {
   from {
     opacity: 0;
@@ -69,6 +57,17 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.animate-top-fade {
+  animation: topFade 0.7s ease-out;
+}
+
+.animate-left-fade {
+  animation: leftFade 0.9s ease-out;
+}
+.animate-right-fade {
+  animation: rightFade 0.5s ease-out;
 }
 
 .animate-center-fade {

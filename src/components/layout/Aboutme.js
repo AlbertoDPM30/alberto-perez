@@ -1,11 +1,39 @@
+"use client";
+
+import { useState, useEffect, useRef } from "react";
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import AirlineStopsRoundedIcon from "@mui/icons-material/AirlineStopsRounded";
 import GradeRoundedIcon from "@mui/icons-material/GradeRounded";
 import WysiwygRoundedIcon from "@mui/icons-material/WysiwygRounded";
 
 import CustomIcons from "../ui/CustomIcons";
+import AnimateOnVisible from "../ui/AnimateOnVisible";
 
 export default function Aboutme() {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
   return (
     <section
       id="aboutme"
@@ -92,7 +120,10 @@ export default function Aboutme() {
         </div>
 
         <div className="flex flex-row flex-wrap gap-8 w-full">
-          <div className="flex-1 border-r-4 border-indigo-600 ml-1 pr-4 animate-left-fade">
+          <AnimateOnVisible
+            animationClass="animate-left-fade"
+            styles="flex-1 border-r-4 border-indigo-600 ml-1 pr-4"
+          >
             <h3 className="text-3xl font-semibold mb-8 text-indigo-600">
               Education
             </h3>
@@ -116,8 +147,11 @@ export default function Aboutme() {
                 <p className="text-gray-800">2023 - Current</p>
               </div>
             </div>
-          </div>
-          <div className="flex-1 border-r-4 border-indigo-600 ml-1 pr-4 animate-center-fade">
+          </AnimateOnVisible>
+          <AnimateOnVisible
+            animationClass="animate-top-fade"
+            styles="flex-1 border-r-4 border-indigo-600 ml-1 pr-4"
+          >
             <h3 className="text-3xl font-semibold mb-8 text-indigo-600">
               Experiences
             </h3>
@@ -171,12 +205,12 @@ export default function Aboutme() {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="flex-1 animate-right-fade">
+          </AnimateOnVisible>
+          <AnimateOnVisible animationClass="animate-right-fade" styles="flex-1">
             <h3 className="text-3xl font-semibold mb-8 text-indigo-600">
               Qualities
             </h3>
-            <div className="mb-4 border-b-4 border-indigo-600 pb-4">
+            <div className="mb-4 border-b-2 border-indigo-600 pb-4">
               <h5 className="text-xl font-semibold text-indigo-600">
                 Languages:
               </h5>
@@ -238,7 +272,7 @@ export default function Aboutme() {
                 </li>
               </ul>
             </div>
-          </div>
+          </AnimateOnVisible>
         </div>
       </article>
     </section>

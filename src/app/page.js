@@ -23,7 +23,7 @@ export default function Home() {
   };
 
   return (
-    <div className="">
+    <>
       <Header tags={tagItems} />
       <main className="flex flex-col gap-8">
         {/* ABOUT ME */}
@@ -35,6 +35,6 @@ export default function Home() {
         {/* PROJECTS */}
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center"></footer>
-    </div>
+    </>
   );
 }
