@@ -37,10 +37,10 @@ export default function Aboutme() {
   return (
     <section
       id="aboutme"
-      className="bg-white px-10 mx-8 rounded-2xl shadow-lg shadow-gray-700 animate-center-fade"
+      className="bg-white px-10 mx-4 md:mx-8 rounded-2xl shadow-lg shadow-gray-700 animate-center-fade"
     >
-      <div className="flex flex-row items-center gap-8 justify-center h-full py-14">
-        <div className="flex-3 animate-left-fade ">
+      <article className="flex flex-row flex-wrap items-center gap-8 justify-center h-full py-14">
+        <div className="flex-1 md:flex-3 animate-left-fade ">
           <h2 className="text-4xl font-bold text-indigo-900 mb-4 flex flex-row">
             <AccountCircleRoundedIcon
               sx={{ fontSize: 40 }}
@@ -87,7 +87,7 @@ export default function Aboutme() {
             />
           </div>
         </div>
-      </div>
+      </article>
       <article className="py-6 text-gray-800 flex flex-row flex-wrap gap-8">
         <div className="flex-3 animate-left-fade ">
           <h3 className="text-3xl font-semibold mb-4 text-indigo-900">
@@ -122,7 +122,7 @@ export default function Aboutme() {
         <div className="flex flex-row flex-wrap gap-8 w-full">
           <AnimateOnVisible
             animationClass="animate-left-fade"
-            styles="flex-1 border-r-4 border-indigo-900 ml-1 pr-4"
+            styles="flex-1 border-b-4 border-r-0 md:border-b-0 md:border-r-4 border-indigo-900 ml-1 pr-4"
           >
             <h3 className="text-3xl font-semibold mb-8 text-indigo-900">
               Education
@@ -150,7 +150,7 @@ export default function Aboutme() {
           </AnimateOnVisible>
           <AnimateOnVisible
             animationClass="animate-top-fade"
-            styles="flex-1 border-r-4 border-indigo-900 ml-1 pr-4"
+            styles="flex-1 border-b-4 border-r-0 md:border-b-0 md:border-r-4 border-indigo-900 ml-1 pr-4"
           >
             <h3 className="text-3xl font-semibold mb-8 text-indigo-900">
               Experiences
