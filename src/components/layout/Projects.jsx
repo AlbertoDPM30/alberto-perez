@@ -1,27 +1,37 @@
 import DomainVerificationRoundedIcon from "@mui/icons-material/DomainVerificationRounded";
 import Image from "next/image";
+import AnimateOnVisible from "../ui/AnimateOnVisible";
 
 export default function Projects() {
   return (
     <>
-      <h2 className="flex items-center text-4xl font-bold text-indigo-900 px-14 pt-8">
-        <DomainVerificationRoundedIcon
-          sx={{ fontSize: 40 }}
-          className="inline-block"
-        />
-        My Projects
-      </h2>
-      <section
-        id="aboutme"
-        className="flex flex-row flex-wrap mx-4 md:mx-8 rounded-2xl shadow-lg shadow-gray-700 animate-center-fade bg-blue-700"
+      <AnimateOnVisible animationClass="animate-bottom-fade">
+        <h2 className="flex items-center text-4xl font-bold text-indigo-900 px-14 pt-8">
+          <DomainVerificationRoundedIcon
+            sx={{ fontSize: 40 }}
+            className="inline-block"
+          />
+          My Projects
+        </h2>
+      </AnimateOnVisible>
+      <AnimateOnVisible
+        id="projects"
+        animationClass={"animate-center-fade"}
+        styles="flex flex-row flex-wrap mx-4 md:mx-8 rounded-2xl shadow-lg shadow-gray-700 animate-center-fade bg-white"
       >
-        <div className="flex-1 rounded-l-2xl">
-          <h3 className="text-2xl font-bold w-[90%] p-8">
+        <AnimateOnVisible
+          animationClass={"animate-bottom-fade"}
+          styles="flex-1 rounded-l-2xl"
+        >
+          <h3 className="text-4xl font-bold w-[90%] p-8 text-blue-800">
             Consolitex® Bienes Raices <br />
             Web page
           </h3>
-        </div>
-        <div className="flex-1 flex justify-center relative z-10 bg-yellow-300 rounded-r-2xl h-[650px] overflow-hidden p-8">
+        </AnimateOnVisible>
+        <AnimateOnVisible
+          animationClass={"animate-right-fade"}
+          styles="flex-1 flex justify-center relative z-10 bg-yellow-300 rounded-r-2xl h-[550px] overflow-hidden p-8"
+        >
           <Image
             src={"./images/consolitex/principal-desktop.jpeg"}
             width={550}
@@ -59,12 +69,12 @@ export default function Projects() {
               borderRadius: 7,
               left: "50%",
               top: 200,
-              transform: "translateX(-50%)",
+              transform: "translateX(-70%)",
             }}
             loading="lazy"
           />
-        </div>
-      </section>
+        </AnimateOnVisible>
+      </AnimateOnVisible>
     </>
   );
 }
