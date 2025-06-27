@@ -5,6 +5,7 @@ import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import AirlineStopsRoundedIcon from "@mui/icons-material/AirlineStopsRounded";
 import GradeRoundedIcon from "@mui/icons-material/GradeRounded";
 import WysiwygRoundedIcon from "@mui/icons-material/WysiwygRounded";
+import ForwardToInboxRoundedIcon from "@mui/icons-material/ForwardToInboxRounded";
 
 import CustomIcons from "../ui/CustomIcons";
 import AnimateOnVisible from "../ui/AnimateOnVisible";
@@ -57,34 +58,48 @@ export default function Aboutme() {
         </div>
         <div className="flex flex-1 flex-col items-center justify-center gap-4 px-6 animate-right-fade">
           <h3 className="text-3xl font-bold text-indigo-900 items-center flex flex-row">
-            <WysiwygRoundedIcon fontSize="large" className="inline-block" />
-            Softwares
+            <ForwardToInboxRoundedIcon
+              fontSize="large"
+              className="inline-block"
+            />
+            Contact me
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <CustomIcons
-              src={"./icons/vs-code.svg"}
-              width={32}
-              height={32}
-              alt={"figma"}
-            />
-            <CustomIcons
-              src={"./icons/figma.svg"}
-              width={32}
-              height={32}
-              alt={"figma"}
-            />
-            <CustomIcons
-              src={"./icons/git.svg"}
-              width={32}
-              height={32}
-              alt={"figma"}
-            />
-            <CustomIcons
-              src={"./icons/postman.svg"}
-              width={32}
-              height={32}
-              alt={"figma"}
-            />
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/alberto-perez-adpm"
+            >
+              <CustomIcons
+                src={"./icons/linkedin.svg"}
+                width={32}
+                height={32}
+                alt={"LinkedIn"}
+              />
+            </a>
+            <a target="_blank" href="mailto:albertodpm2000@gmail.com">
+              <CustomIcons
+                src={"./icons/email.svg"}
+                width={32}
+                height={32}
+                alt={"email"}
+              />
+            </a>
+            <a target="_blank" href="https://t.me/AlbertoDPM">
+              <CustomIcons
+                src={"./icons/telegram.svg"}
+                width={32}
+                height={32}
+                alt={"Telegram"}
+              />
+            </a>
+            <a target="_blank" href="https://wa.me/584244275255">
+              <CustomIcons
+                src={"./icons/whatsapp.svg"}
+                width={32}
+                height={32}
+                alt={"Whatsapp"}
+              />
+            </a>
           </div>
         </div>
       </article>
@@ -122,7 +137,7 @@ export default function Aboutme() {
         <div className="flex flex-row flex-wrap gap-8 w-full">
           <AnimateOnVisible
             animationClass="animate-left-fade"
-            styles="flex-1 border-b-4 border-r-0 md:border-b-0 md:border-r-4 border-indigo-900 ml-1 pr-4"
+            styles="flex-1 border-b-4 border-r-0 md:border-b-0 md:border-r-4 border-indigo-900 ml-1 pb-4 px-4"
           >
             <h3 className="text-3xl font-semibold mb-8 text-indigo-900">
               Education
@@ -149,8 +164,8 @@ export default function Aboutme() {
             </div>
           </AnimateOnVisible>
           <AnimateOnVisible
-            animationClass="animate-top-fade"
-            styles="flex-1 border-b-4 border-r-0 md:border-b-0 md:border-r-4 border-indigo-900 ml-1 pr-4"
+            animationClass="animate-bottom-fade"
+            styles="flex-1 border-b-4 border-r-0 md:border-b-0 md:border-r-4 border-indigo-900 ml-1 pb-4 px-4"
           >
             <h3 className="text-3xl font-semibold mb-8 text-indigo-900">
               Experiences
