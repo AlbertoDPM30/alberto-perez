@@ -31,7 +31,7 @@ export default function Home() {
         {/* ABOUT ME */}
         <Profile
           name={"Alberto Daniel Pérez Moreno"}
-          tags={"Web Developer | Full Stack | GUI Aplication Designer"}
+          tags={"Web Developer | Full Stack | Aplication Designer"}
         />
         <Aboutme />
         <TechnicalTools /> {/* TECHNICAL TOOLS */}

@@ -10,7 +10,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   overflow-x: hidden;
-  width: 100dvw;
+  width: 100vw;
 }
 
 .title-color {

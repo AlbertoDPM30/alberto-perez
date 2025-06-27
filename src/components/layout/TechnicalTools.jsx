@@ -62,13 +62,23 @@ export default function TechnicalTools() {
           />
           <CustomToolsIcons
             src="./icons/jquery.svg"
-            alt="Jquery"
-            text="Jquery"
+            alt="jQuery"
+            text="jQuery"
           />
           <CustomToolsIcons
             src="./icons/nodejs.svg"
             alt="Node JS"
             text="Node JS"
+          />
+          <CustomToolsIcons
+            src="./icons/tailwind.svg"
+            alt="Tailwind CSS"
+            text="Tailwind CSS"
+          />
+          <CustomToolsIcons
+            src="./icons/bootstrap.svg"
+            alt="Bootstrap"
+            text="Bootstrap"
           />
         </AnimateOnVisible>
       </AnimateOnVisible>
@@ -108,6 +118,11 @@ export default function TechnicalTools() {
           styles="grid grid-cols-2 sm:grid-cols-8 gap-8"
         >
           <CustomToolsIcons src="./icons/figma.svg" alt="Figma" text="Figma" />
+          <CustomToolsIcons
+            src="./icons/material-ui.svg"
+            alt="Materia UI"
+            text="Materia UI"
+          />
           <CustomToolsIcons src="./icons/git.svg" alt="Git" text="Git" />
           <CustomToolsIcons
             src="./icons/vs-code.svg"

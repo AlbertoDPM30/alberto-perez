@@ -51,8 +51,8 @@ export default function Aboutme() {
           </h2>
           <p className="text-lg text-gray-700">
             Hello! I'm Alberto Daniel Pérez Moreno, a passionate web developer
-            with expertise in full-stack development and GUI application design.
-            I love creating dynamic and responsive web applications that provide
+            with expertise in full-stack development and application design. I
+            love creating dynamic and responsive web applications that provide
             great user experiences.
           </p>
         </div>
@@ -128,7 +128,7 @@ export default function Aboutme() {
           <ul className="list-disc list-inside mb-4">
             <li>Full Stack Development</li>
             <li>Responsive Web Design</li>
-            <li>GUI Application Design</li>
+            <li>Application Design</li>
             <li>Database Management</li>
             <li>Version Control (Git)</li>
           </ul>
