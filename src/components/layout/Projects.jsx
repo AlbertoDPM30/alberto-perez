@@ -1,6 +1,8 @@
 import DomainVerificationRoundedIcon from "@mui/icons-material/DomainVerificationRounded";
+import ScreenShareRoundedIcon from "@mui/icons-material/ScreenShareRounded";
 import Image from "next/image";
 import AnimateOnVisible from "../ui/AnimateOnVisible";
+import CustomButtons from "../ui/CustomButtons";
 
 export default function Projects() {
   return (
@@ -24,13 +26,55 @@ export default function Projects() {
           styles="flex-1 rounded-l-2xl"
         >
           <h3 className="text-4xl font-bold w-[90%] p-8 text-blue-800">
-            Consolitex® Bienes Raices <br />
+            <a href="https://consolitex.org" target="_black">
+              CONSOLITEX® Bienes Raices
+            </a>{" "}
+            <br />
             Web page
           </h3>
+
+          <p className="text-lg text-gray-800 px-8">
+            <b>CONSOLITEX® </b>is a Venezuelan real estate company with over 40
+            years in the market.
+          </p>
+
+          <ul>
+            <li className="pl-8 text-lg text-gray-700 my-4">
+              <b>Dedicated sections for main categories:</b>
+              <ul className="list-disc pl-8 text-lg text-gray-700 my-4">
+                <li className="text-sm">Apartments</li>
+                <li className="text-sm">Townhouses</li>
+                <li className="text-sm">Commercial spaces</li>
+                <li className="text-sm">Warehouses</li>
+                <li className="text-sm">Lands</li>
+                <li className="text-sm">Offices</li>
+              </ul>
+            </li>
+            <li className="pl-8 text-lg text-gray-700 my-4">
+              <b>General search engine.</b>
+            </li>
+            <li className="pl-8 text-lg text-gray-700 my-4">
+              <b>Filtering options.</b>
+            </li>
+            <li className="pl-8 text-lg text-gray-700 my-4">
+              <b>A simple and attractive design.</b>
+            </li>
+            <li className="pl-8 text-lg text-gray-700 mt-4 mb-8">
+              <b>100% Responsive</b>
+            </li>
+          </ul>
+
+          <div className="flex items-center justify-end px-8">
+            <CustomButtons
+              text="Visit page"
+              icon={<ScreenShareRoundedIcon className="inline-block ml-1" />}
+              url="https://consolitex.org"
+            />
+          </div>
         </AnimateOnVisible>
         <AnimateOnVisible
           animationClass={"animate-right-fade"}
-          styles="flex-1 flex justify-center relative z-10 bg-yellow-300 rounded-r-2xl h-[550px] overflow-hidden p-8"
+          styles="flex-1 flex justify-center relative z-10 bg-yellow-300 rounded-r-2xl h-[640px] overflow-hidden p-8"
         >
           <Image
             src={"./images/consolitex/principal-desktop.jpeg"}
