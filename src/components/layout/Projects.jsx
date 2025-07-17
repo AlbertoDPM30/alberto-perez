@@ -74,14 +74,14 @@ export default function Projects() {
         </AnimateOnVisible>
         <AnimateOnVisible
           animationClass={"animate-right-fade"}
-          styles="flex-1 flex justify-center relative z-10 md:bg-yellow-300 rounded-b-2xl md:rounded-r-2xl h-[350px] md:h-[640px] overflow-hidden p-8"
+          styles="flex-1 flex justify-center relative z-10 md:bg-yellow-300 max-sm:rounded-b-2xl sm:rounded-r-2xl h-[350px] md:h-[640px] overflow-hidden p-8"
         >
           <Image // ONLY FOR MOBILE
             src={"./images/consolitex/principal-tablet.jpeg"}
             width={550}
             height={500}
             alt="Principal"
-            className="absolute z-10 shadow-2xl shadow-neutral-800/70 "
+            className="block md:hidden absolute z-10 shadow-2xl shadow-neutral-800/70 "
             style={{
               borderRadius: 7,
             }}
