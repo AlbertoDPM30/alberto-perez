@@ -134,7 +134,7 @@ export default function Projects() {
         </AnimateOnVisible>
       </AnimateOnVisible>
 
-      {/* A SECTION */}
+      {/* ASTROCHATBOT SECTION */}
       <AnimateOnVisible
         id="projects"
         animationClass={"animate-center-fade"}
@@ -153,7 +153,7 @@ export default function Projects() {
           </h3>
 
           <p className="text-lg text-gray-100 px-8">
-            <b>AstroChatBot </b>is a Virtual assistant specializing in
+            <b>AstroChatbot </b>is a Virtual assistant specializing in
             Astronomy, cosmic phenomena, and the vast universe.
           </p>
 
@@ -233,6 +233,106 @@ export default function Projects() {
               right: "32px",
               bottom: 5,
               width: "35%",
+            }}
+            loading="lazy"
+          />
+        </AnimateOnVisible>
+      </AnimateOnVisible>
+
+      {/* ECASYS SECTION */}
+      <AnimateOnVisible
+        id="projects"
+        animationClass={"animate-center-fade"}
+        styles="flex flex-row flex-wrap mx-4 md:mx-8 rounded-2xl shadow-lg shadow-gray-700 animate-center-fade bg-white"
+      >
+        <AnimateOnVisible
+          animationClass={"animate-bottom-fade"}
+          styles="flex-1 rounded-l-2xl"
+        >
+          <h3 className="text-4xl w-[90%] p-8 text-teal-700">
+            <b>ECASYS</b> <br />
+            Billing and Inventory Control System
+          </h3>
+
+          <p className="text-lg text-gray-800 px-8">
+            <b>ECASYS </b>It's a billing and inventory control system developed
+            for a company selling buildable toys and Legos.
+          </p>
+
+          <ul>
+            <li className="pl-8 text-lg text-gray-700 my-4">
+              <b>Fun design based on the company's theme.</b>
+            </li>
+            <li className="pl-8 text-lg text-gray-700 my-4">
+              <b>Billing and reports.</b>
+            </li>
+            <li className="pl-8 text-lg text-gray-700 my-4">
+              <b>Easy-to-use inventory management.</b>
+            </li>
+            <li className="pl-8 text-lg text-gray-700 my-4">
+              <b>Developed with these technologies:</b>
+              <ul className="list-disc pl-8 text-lg text-gray-700 my-4">
+                <li className="text-sm">PHP MVC + PDO</li>
+                <li className="text-sm">JavaScript + jQuery</li>
+                <li className="text-sm">CSS + Bootstrap CSS</li>
+                <li className="text-sm">MySQL as the DB engine</li>
+              </ul>
+            </li>
+            <li className="pl-8 text-lg text-gray-700 mt-4 mb-8">
+              <b>Generates reports using TCPDF.</b>
+            </li>
+          </ul>
+
+          <div className="flex items-center justify-end px-8 gap-3">
+            <CustomButtons
+              text="Visit repository"
+              icon={<GitHubIcon className="inline-block ml-1" />}
+              url="https://github.com/AlbertoDPM30/ecasys"
+            />
+          </div>
+        </AnimateOnVisible>
+        <AnimateOnVisible
+          animationClass={"animate-right-fade"}
+          styles="flex-1 flex justify-center relative z-10 md:bg-[#237ccf] max-sm:rounded-b-2xl sm:rounded-r-2xl h-[350px] md:h-[650px] overflow-hidden p-8"
+        >
+          <Image // ONLY FOR MOBILE
+            src={"./images/ecasys/ecasys-ventas-desktop.jpeg"}
+            width={550}
+            height={500}
+            alt="Principal"
+            className="block md:hidden absolute z-10 shadow-2xl shadow-neutral-800/70 "
+            style={{
+              borderRadius: 7,
+            }}
+            loading="lazy"
+          />
+
+          <Image
+            src={"./images/ecasys/ecasys-reportes-desktop.jpeg"}
+            width={550}
+            height={500}
+            alt="Principal"
+            className="hidden md:block absolute z-10 shadow-2xl shadow-neutral-800/70 brightness-75 transition-all ease-in-out duration-200 hover:z-30 hover:brightness-100 hover:-translate-y-3.5"
+            style={{
+              borderRadius: 7,
+              left: "32px",
+              bottom: 10,
+              width: "100%",
+            }}
+            loading="lazy"
+          />
+
+          <Image
+            src={"./images/ecasys/ecasys-ventas-desktop.jpeg"}
+            width={350}
+            height={200}
+            alt="Principal"
+            className="hidden md:block absolute z-10 shadow-4xl shadow-neutral-800/80 brightness-95 transition-all ease-in-out duration-200 hover:z-30 hover:brightness-100 hover:-translate-y-3.5"
+            style={{
+              borderRadius: 7,
+              right: "32px",
+              bottom: 100,
+              width: "calc(100% - 40px)",
             }}
             loading="lazy"
           />
