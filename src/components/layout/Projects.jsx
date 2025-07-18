@@ -138,11 +138,11 @@ export default function Projects() {
       <AnimateOnVisible
         id="projects"
         animationClass={"animate-center-fade"}
-        styles="flex flex-row flex-wrap mx-4 md:mx-8 rounded-2xl shadow-lg shadow-gray-700 animate-center-fade bg-white"
+        styles="sm:flex sm:flex-row flex-wrap mx-4 md:mx-8 rounded-2xl shadow-lg shadow-gray-700 animate-center-fade bg-white"
       >
         <AnimateOnVisible
           animationClass={"animate-bottom-fade"}
-          styles="flex-1 rounded-l-2xl bg-[#212529]"
+          styles="flex-1 max-sm:rounded-t-2xl max-sm:rounded-t-2xl sm:rounded-l-2xl bg-[#212529] py-4"
         >
           <h3 className="text-4xl font-bold w-[90%] p-8 text-indigo-600 font-mono">
             <a href="https://astrochatbot-67v7o2zi.b4a.run/" target="_black">
@@ -193,7 +193,7 @@ export default function Projects() {
         </AnimateOnVisible>
         <AnimateOnVisible
           animationClass={"animate-right-fade"}
-          styles="flex-1 flex justify-center relative z-10 md:bg-[#3f4388] max-sm:rounded-b-2xl sm:rounded-r-2xl h-[350px] md:h-[580px] overflow-hidden p-8"
+          styles="flex-1 flex justify-center relative z-10 bg-[#3f4388] max-sm:rounded-b-2xl sm:rounded-r-2xl h-[350px] md:h-[600px] overflow-hidden max-sm:py-0 max-sm:-mt-1 p-8"
         >
           <Image // ONLY FOR MOBILE
             src={"./images/astrochatbot/astrochatbot-mobile.jpeg"}
@@ -243,7 +243,7 @@ export default function Projects() {
       <AnimateOnVisible
         id="projects"
         animationClass={"animate-center-fade"}
-        styles="flex flex-row flex-wrap mx-4 md:mx-8 rounded-2xl shadow-lg shadow-gray-700 animate-center-fade bg-white"
+        styles="sm:flex sm:flex-row flex-wrap mx-4 md:mx-8 rounded-2xl shadow-lg shadow-gray-700 animate-center-fade bg-white"
       >
         <AnimateOnVisible
           animationClass={"animate-bottom-fade"}
@@ -293,7 +293,7 @@ export default function Projects() {
         </AnimateOnVisible>
         <AnimateOnVisible
           animationClass={"animate-right-fade"}
-          styles="flex-1 flex justify-center relative z-10 md:bg-[#237ccf] max-sm:rounded-b-2xl sm:rounded-r-2xl h-[350px] md:h-[650px] overflow-hidden p-8"
+          styles="flex-1 flex justify-center relative z-10 md:bg-[#237ccf] max-sm:rounded-b-2xl sm:rounded-r-2xl h-[200px] md:h-[650px] overflow-hidden p-8"
         >
           <Image // ONLY FOR MOBILE
             src={"./images/ecasys/ecasys-ventas-desktop.jpeg"}
