@@ -5,7 +5,7 @@ import HandymanIcon from "@mui/icons-material/Handyman";
 
 export default function Services() {
   return (
-    <section id="services">
+    <section id="services" className="px-4 flex flex-col">
       <div className="container mx-auto">
         <AnimateOnVisible animationClass="animate-bottom-fade">
           <h2 className="flex items-center justify-center text-4xl font-bold text-indigo-900 px-14 pt-8">
