@@ -7,7 +7,7 @@ import CustomButtons from "../ui/CustomButtons";
 
 export default function Projects() {
   return (
-    <>
+    <section id="projects" className="flex flex-col gap-10">
       <AnimateOnVisible animationClass="animate-bottom-fade">
         <h2 className="flex items-center text-4xl font-bold text-indigo-900 px-14 pt-8">
           <DomainVerificationRoundedIcon
@@ -147,9 +147,7 @@ export default function Projects() {
           <h3 className="text-4xl font-bold w-[90%] p-8 text-indigo-600 font-mono">
             <a href="https://astrochatbot-67v7o2zi.b4a.run/" target="_black">
               ASTROCHATBOT
-            </a>{" "}
-            <br />
-            with LLaMA AI
+            </a>
           </h3>
 
           <p className="text-lg text-gray-100 px-8">
@@ -184,11 +182,11 @@ export default function Projects() {
               icon={<GitHubIcon className="inline-block ml-1" />}
               url="https://github.com/AlbertoDPM30/chatbot_llama_ai"
             />
-            <CustomButtons
+            {/* <CustomButtons
               text="Visit page"
               icon={<ScreenShareRoundedIcon className="inline-block ml-1" />}
               url="https://astrochatbot-67v7o2zi.b4a.run/"
-            />
+            /> */}
           </div>
         </AnimateOnVisible>
         <AnimateOnVisible
@@ -338,6 +336,6 @@ export default function Projects() {
           />
         </AnimateOnVisible>
       </AnimateOnVisible>
-    </>
+    </section>
   );
 }

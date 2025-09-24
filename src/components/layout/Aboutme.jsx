@@ -76,7 +76,7 @@ export default function Aboutme() {
                 alt={"LinkedIn"}
               />
             </a>
-            <a target="_blank" href="mailto:albertodpm2000@gmail.com">
+            <a target="_blank" href="mailto:contacto.adpmdev@gmail.com">
               <CustomIcons
                 src={"./icons/email.svg"}
                 width={32}
